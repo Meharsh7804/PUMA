@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Puma-Home</title>
     <link rel="stylesheet" href="styles.css" />
-    <link rel="shortcut icon" href="./assets/puma-white.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="./assets/puma-white.png"
+      type="image/x-icon"
+    />
     <link
       rel="stylesheet"
       type="text/css"
@@ -22,7 +26,7 @@
   <body>
     <header>
       <div class="logo">
-        <img src="./assets/Puma Logo.jpg" alt="Puma Logo" />
+        <img src="./assets/puma-white.png" alt="Puma Logo" />
       </div>
       <div class="nav">
         <h3>New</h3>
@@ -30,53 +34,57 @@
         <h3>Women</h3>
         <h3>Kids</h3>
       </div>
-      <div class="search"><img src="./assets/search.png" alt="" /> Search</div>
+      <div class="search">
+        <i class="fa fa-search" aria-hidden="true"></i> Search
+      </div>
       <div class="nav-buttons">
         <img src="./assets/nav-buttons.png" alt="" />
       </div>
     </header>
     <main>
-      <div class="hero-slider">
-        <div class="hero">
-          <img class="black-shoe" src="./assets/black-shoe.png" alt="" />
-          <img class="puma-white" src="./assets/puma-white.png" alt="" />
-          <p class="tagline">FOREVER<br />FASTER</p>
-          <p class="name"><i>PUMA</i><br />UPROAR</p>
-          <div class="left-arrow-container">
-            <i
-              ><h3>SLEEK <span>DESIGN</span></h3></i
-            >
-            <div class="left-arrow"></div>
-          </div>
-          <div class="right-arrow-container">
-            <div class="right-arrow-tilted"></div>
-            <div class="right-arrow"></div>
-            <i
-              ><h3>STEADY <span>GRIP</span></h3></i
-            >
-          </div>
+      <div class="slider" >
+        <div class="sliderWrapper">
+            <div class="sliderItem" >
+                <img src="./assets/black-shoe.png" alt="" class="sliderImg" >
+                <div class="sliderBg"><img src="./assets/puma-white.png" alt=""></div>
+                <h1 class="sliderTitle">FASTER <br> FOREVER</h1>
+                <h2 class="sliderPrice"><i style="color: rgb(0, 0, 0); text-shadow: 0 1px 2px #ffffff;  ">PUMA</i><br>UPROAR</h2>
+            </div>
+            <div class="sliderItem" >
+              <img src="./assets/red-shoe.png" alt="" class="sliderImg" >
+              <div class="sliderBg"><img src="./assets/puma-white.png" alt=""></div>
+              <h1 class="sliderTitle">FASTER <br> FOREVER</h1>
+              <h2 class="sliderPrice"><i style="color: rgb(0, 0, 0); text-shadow: 0 1px 2px #ffffff;  ">PUMA</i><br>AXELION</h2>
+            </div>
+            <div class="sliderItem" >
+              <img src="./assets/blue-shoe.png" alt="" class="sliderImg" >
+              <div class="sliderBg"><img src="./assets/puma-white.png" alt=""></div>
+              <h1 class="sliderTitle">FASTER <br> FOREVER</h1>
+              <h2 class="sliderPrice"><i style="color: rgb(0, 0, 0); text-shadow: 0 1px 2px #ffffff;  ">PUMA</i><br>AXELION</h2>
+            </div>
+            <div class="sliderItem" >
+              <img src="./assets/sneak-shoe.png" alt="" class="sliderImg" >
+              <div class="sliderBg"><img src="./assets/puma-white.png" alt=""></div>
+              <h1 class="sliderTitle">FASTER <br> FOREVER</h1>
+              <h2 class="sliderPrice"><i style="color: rgb(0, 0, 0); text-shadow: 0 1px 2px #ffffff;  ">PUMA</i><br>AXELION</h2>
+            </div>
+            <div class="sliderItem" >
+              <img src="./assets/yellow-shoe.png" alt="" class="sliderImg" >
+              <div class="sliderBg"><img src="./assets/puma-white.png" alt=""></div>
+              <h1 class="sliderTitle">FASTER <br> FOREVER</h1>
+              <h2 class="sliderPrice"><i style="color: rgb(0, 0, 0); text-shadow: 0 1px 2px #ffffff;  ">PUMA</i><br>AXELION</h2>
+            </div>
         </div>
-        <!-- <div class="hero" style="background-color: #EE761F; padding-top: 100px ;">
-          <img class="orange-shoe" src="./assets/orange-shoe.png" alt="" />
-          <img class="puma-white" src="./assets/Puma White.png" alt="" />
-          <p class="tagline-2">FOREVER<br />FASTER</p>
-          <p class="name-2"><i>PUMA</i><br />DEVIATE NITRO</p>
-          <div class="left-arrow-container" style="left: -26%; top: 10%;">
-            <i
-              ><h3>STEADY <span>GRIP</span></h3></i
-            >
-            <div class="left-arrow"></div>
-          </div>
-          <div class="right-arrow-container" style="right: -10%; top: 4%;">
-            <div class="right-arrow-tilted"></div>
-            <div class="right-arrow"></div>
-            <i
-              ><h3>SLEEK <span style="color: #e4ff17;">DESIGN</span></h3></i
-            >
-          </div>
-        </div> -->
+        <div class="sliderBottom">
+          <div class="menuItem active"></div>
+          <div class="menuItem"></div>
+          <div class="menuItem"></div>
+          <div class="menuItem"></div>
+          <div class="menuItem"></div>
+        </div>
       </div>
-      <div class="slider">
+      
+      <div class="ad-slider">
         <div class="marquee">
           <ul class="marquee-content">
             <li>
@@ -96,11 +104,6 @@
           FLAT 40% OFF | + EXTRA 5% OFF ON ONLINE PAYMENTS
         </h4>
       </div>
-      <!-- <div class="Puma-FENTY">
-        <div class="title-video">
-          <video src="./assets/Puma-FENTY.mp4" autoplay muted loop></video>
-        </div>
-      </div> -->
       <div class="Puma-NITRO">
         <div class="back">
           <h1>

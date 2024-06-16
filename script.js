@@ -4,20 +4,132 @@ let tl = gsap.timeline();
 tl.from("header", { duration: 1, y: -50, opacity: 0 });
 
 //animate puma logo
-tl.from(".puma-white", { duration: 2, opacity: 0 });
+tl.from(".sliderBg", { duration: 2, opacity: 0 });
 
 // animate the shoe
-tl.from(".black-shoe", { duration: 1, y: 50, opacity: 0 });
+tl.from(".sliderImg", { duration: 1, y: 50, opacity: 0 });
 
 // animate the name
-tl.from(".name, .name-2", { duration: 1, y: 50, opacity: 0 });
+tl.from(".sliderPrice", { duration: 1, x: -50, opacity: 0 });
 
 // animate the arrows
-tl.from(".left-arrow-container", { duration: 1, x: -50, opacity: 0 });
-tl.from(".right-arrow-container", { duration: 1, x: 50, opacity: 0 });
+// tl.from(".left-arrow-container", { duration: 1, x: -50, opacity: 0 });
+// tl.from(".right-arrow-container", { duration: 1, x: 50, opacity: 0 });
 
 // animate the tagline
-tl.from(".tagline, .tagline-2", { duration: 1, y: 50, opacity: 0 });
+tl.from(".sliderTitle", { duration: 1, x: 50, opacity: 0 });
+
+const wrapper = document.querySelector(".sliderWrapper");
+const menuItems = document.querySelectorAll(".menuItem");
+
+const products = [
+  {
+    id: 1,
+    title: "Air Force",
+    price: 119,
+    colors: [
+      {
+        code: "black",
+        img: "../assets/Images/sneaker-images/air.png",
+      },
+      {
+        code: "darkblue",
+        img: "../assets/Images/sneaker-images/air2.png",
+      },
+    ],
+  },
+  {
+    id: 2,
+    title: "Air Jordan",
+    price: 149,
+    colors: [
+      {
+        code: "lightgray",
+        img: "../assets/Images/sneaker-images/jordan.png",
+      },
+      {
+        code: "green",
+        img: "../assets/Images/sneaker-images/jordan2.png",
+      },
+    ],
+  },
+  {
+    id: 3,
+    title: "Blazer",
+    price: 109,
+    colors: [
+      {
+        code: "lightgray",
+        img: "../assets/Images/sneaker-images/blazer.png",
+      },
+      {
+        code: "green",
+        img: "../assets/Images/sneaker-images/blazer2.png",
+      },
+    ],
+  },
+  {
+    id: 4,
+    title: "Crater",
+    price: 129,
+    colors: [
+      {
+        code: "black",
+        img: "../assets/Images/sneaker-images/crater.png",
+      },
+      {
+        code: "lightgray",
+        img: "../assets/Images/sneaker-images/crater2.png",
+      },
+    ],
+  },
+  {
+    id: 5,
+    title: "Hippie",
+    price: 99,
+    colors: [
+      {
+        code: "gray",
+        img: "../assets/Images/sneaker-images/hippie.png",
+      },
+      {
+        code: "black",
+        img: "../assets/Images/sneaker-images/hippie2.png",
+      },
+    ],
+  },
+];
+
+menuItems.forEach((item, index) => {
+  item.addEventListener("click", () => {
+    //change the current slide
+    wrapper.style.transform = `translateX(${-100 * index}vw)`;
+
+    //change the choosen product
+    choosenProduct = products[index];
+
+    //change texts of currentProduct
+    currentProductTitle.textContent = choosenProduct.title;
+    currentProductPrice.textContent = "$" + choosenProduct.price;
+    currentProductImg.src = choosenProduct.colors[0].img;
+
+    //assing new colors
+    currentProductColors.forEach((color, index) => {
+      color.style.backgroundColor = choosenProduct.colors[index].code;
+    });
+  });
+});
+
+document.querySelectorAll(".menuItem").forEach((item) => {
+  item.addEventListener("click", function () {
+    // Remove active class from all items
+    document.querySelectorAll(".menuItem").forEach((div) => {
+      div.classList.remove("active");
+    });
+    // Add active class to clicked item
+    this.classList.add("active");
+  });
+});
 
 //Slider Animations
 const root = document.documentElement;
