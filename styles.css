@@ -110,8 +110,8 @@ header .nav-buttons {
 }
 
 .sliderBg {
-  width: 550px;
-  height: 550px;
+  width: 40vw;
+  height: 40vw;
   border-radius: 50%;
   position: absolute;
   z-index: 0;
@@ -119,6 +119,7 @@ header .nav-buttons {
 }
 
 .sliderBg img{
+  position: absolute;
   width: 40vw;
   height: auto;
 }
