@@ -630,6 +630,7 @@ header .nav-buttons {
 
 .sliding-background {
   background: url("./assets/trnding-background.png") repeat-y 0 0;
+  background-size: cover;
   height: auto;
   width: 100vw;
   animation: slide 5s linear infinite;
