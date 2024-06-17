@@ -4,7 +4,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "gilroy";
 }
 
 html,
@@ -110,8 +109,8 @@ header .nav-buttons {
 }
 
 .sliderBg {
-  width: 40vw;
-  height: 40vw;
+  width: 45vw;
+  height: 45vw;
   border-radius: 50%;
   position: absolute;
   z-index: 0;
@@ -120,7 +119,7 @@ header .nav-buttons {
 
 .sliderBg img{
   position: absolute;
-  width: 40vw;
+  width: 100%;
   height: auto;
 }
 
@@ -145,7 +144,7 @@ header .nav-buttons {
 
 .sliderPrice {
   position: absolute;
-  left: 12%;
+  left: 8%;
   font-size: 5vw;
   font-weight: 800;
   text-align: center;
