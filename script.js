@@ -12,10 +12,6 @@ tl.from(".sliderImg", { duration: 1, y: 50, opacity: 0 });
 // animate the name
 tl.from(".sliderPrice", { duration: 1, x: -50, opacity: 0 });
 
-// animate the arrows
-// tl.from(".left-arrow-container", { duration: 1, x: -50, opacity: 0 });
-// tl.from(".right-arrow-container", { duration: 1, x: 50, opacity: 0 });
-
 // animate the tagline
 tl.from(".sliderTitle", { duration: 1, x: 50, opacity: 0 });
 
@@ -151,7 +147,7 @@ var specificArea2 = document.querySelector(".trending-item-2");
 area.addEventListener("mousemove", (dets) => {
   gsap.to(".cursor", {
     x: dets.x,
-    y: dets.y,
+    y: dets.y, 
     ease: "circ.out",
   });
 });

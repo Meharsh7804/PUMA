@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Ropa+Sans:ital@0;1&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
 * {
   margin: 0;
@@ -11,6 +12,7 @@ body {
   height: 100%;
   width: 100%;
   background-color: #101010;
+  font-family: "Ropa Sans";
 }
 
 /* CUSTOM SCROLLBAR */
@@ -66,9 +68,15 @@ header .nav h3 {
   margin: auto 18px;
   font-weight: bold;
   color: rgb(243, 243, 243);
+  cursor: pointer;
+}
+
+.nav h3:hover{
+  text-decoration: underline;
 }
 
 header .search {
+  font-family: Outfit;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -92,6 +100,8 @@ header .nav-buttons {
 .slider {
   background: transparent;
   overflow: hidden;
+  padding-top: 1vw;
+  padding-bottom: 2vw;
 }
 
 .sliderWrapper {
@@ -129,8 +139,9 @@ header .nav-buttons {
 }
 
 .sliderTitle {
+  font-family: Outfit;
   position: absolute;
-  right: 6%;
+  right: 2%;
   line-height: 4.2vw;
   font-size: 5vw;
   font-weight: 900;
@@ -258,7 +269,7 @@ header .nav-buttons {
   border-radius: 50%;
   height: 10px;
   width: 10px;
-  background-color: #797979;
+  background-color: #f3f3f3;
 }
 
 .menuItem.active {
@@ -268,9 +279,10 @@ header .nav-buttons {
 
 /*HERO*/
 
-/*Advertisement*/
+/*ADVERTISEMENT*/
 
 .advertisement {
+  width: 99.3vw;
   padding: 2.4vw;
   background-color: #ffffff;
   display: flex;
@@ -287,25 +299,31 @@ header .nav-buttons {
   letter-spacing: 1px;
   font-weight: 900;
   padding: 10px;
+  cursor: pointer;
+}
+
+.top-line:hover {
+  text-decoration: underline;
 }
 
 .bottom-line {
   font-family: "Ropa Sans", sans-serif;
   font-size: 20px;
   font-weight: 300;
+  cursor: pointer;
 }
 
-.Puma-FENTY .title-video video {
-  height: 100%;
-  width: 100%;
+.bottom-line:hover {
+  text-decoration: underline;
 }
+
+/*ADVERTISEMENT*/
 
 /*SLIDER*/
 
 :root {
   --marquee-width: 180vw;
   --marquee-height: 6vh;
-  /* --marquee-elements: 12; */ /* defined with JavaScript */
   --marquee-elements-displayed: 3;
   --marquee-element-width: calc(
     var(--marquee-width) / var(--marquee-elements-displayed)
@@ -323,7 +341,7 @@ header .nav-buttons {
 .marquee {
   width: 100%;
   height: var(--marquee-height);
-  background-color: #111;
+  background-color: #000000;
   color: #eee;
   overflow: hidden;
   position: relative;
@@ -423,6 +441,7 @@ header .nav-buttons {
   height: 40vw;
   background: #fff;
   overflow: hidden;
+  width: 99.3vw;
 }
 
 .Puma-NITRO .back {
@@ -431,7 +450,7 @@ header .nav-buttons {
   background: #000000;
   height: 85%;
   width: 100%;
-  background: linear-gradient(-45deg, #000000, #7b7f2e, #000);
+  background: linear-gradient(-45deg, #000000, #f5ff37, #000);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
 }
@@ -448,51 +467,42 @@ header .nav-buttons {
   }
 }
 
-.Puma-NITRO .back h1,
-h2,
-button,
-sup {
-  font-family: "Ropa Sans", sans-serif;
-}
-
 .Puma-NITRO .back h1 {
-  font-size: 40px;
+  font-size: 3vw;
   font-weight: 600;
   color: #fff;
   letter-spacing: 1px;
-  margin-top: 100px;
+  margin-top: 5vw;
 }
 
 .Puma-NITRO .back h2 {
-  margin-top: 10px;
-  margin-bottom: 7px;
-  font-size: 28px;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+  font-size: 1.8vw;
   font-weight: 300;
   color: #f2f2f2;
-  letter-spacing: 1px;
 }
 
 .Puma-NITRO .back sup {
-  font-size: 14px;
+  font-size: 0.8vw;
   font-weight: 300;
   color: #f2f2f2;
   letter-spacing: 1px;
 }
 
 .Puma-NITRO .back button {
-  margin-top: 10px;
   padding: 10px 20px;
   background: #e5ff1f;
   color: #000;
   border: none;
-  border-radius: 5px;
-  font-size: 15px;
+  border-radius: 1vw;
+  font-size: 1vw;
   font-weight: 300;
   cursor: pointer;
-  margin-right: 10px;
+  margin-right: 1vw;
 }
 
-.Puma-NITRO .MS-Video {
+.Puma-NITRO .MS-Image {
   position: absolute;
   height: 78vh;
   width: 54.9vw;
@@ -500,20 +510,21 @@ sup {
   background-color: #000;
 }
 
-.MS-Video img {
+.MS-Image img {
   width: 54.9vw;
   height: 78vh;
 }
 
 /*PUMA-Nitro*/
 
-/*Display*/
+/*DISPLAY*/
 
 .display {
   padding-top: 3vw;
   background-color: #fff;
   display: flex;
   flex-direction: column;
+  width: 99.3vw;
 }
 
 .display-grid {
@@ -525,7 +536,7 @@ sup {
 }
 
 .display h2 {
-  padding-left: 40px;
+  padding-left: 2.5vw;
   font-size: 2.5vw;
 }
 
@@ -538,8 +549,8 @@ sup {
 .heading h3 {
   font-family: "Ropa Sans", sans-serif;
   font-size: 1.2vw;
-  padding-left: 40px;
-  margin-right: 40px;
+  padding-left: 3vw;
+  margin-right: 3vw;
   font-weight: normal;
   cursor: pointer;
 }
@@ -551,30 +562,26 @@ sup {
 .display-item {
   display: flex;
   flex-direction: column;
-  border-radius: 5%;
-  height: 80%;
-  width: 15%;
+  border-radius: 1vw;
+  height: fit-content;
+  width: 15vw;
   background-color: #eeecec;
-  margin: 0 10px;
+  margin: 0 2vw;
   transition: all 0.7s ease-in-out;
 }
 
 .display-item img {
-  margin-top: -30px;
-  width: 200px;
-  height: 250px;
+  width: 15vw;
+  height: 15vw;
   transition: all 0.6s ease-in-out;
 }
 
 .shoe-info h3 {
-  font-family: "Ropa Sans", sans-serif;
   font-size: x-large;
-  margin-left: 10px;
-  margin-top: -50px;
+  margin-left: 1vw;
 }
 
 .shoe-info span {
-  font-family: "Ropa Sans", sans-serif;
   font-size: large;
   font-weight: normal;
 }
@@ -585,58 +592,12 @@ sup {
 
 .display-item:hover img {
   scale: 1.1;
-  transform: rotate(-10deg);
+  transform: rotate(10deg);
 }
 
-.deviate {
-  animation: all 1.9s ease-in;
-}
-.deviate:hover {
-  background-image: linear-gradient(135deg, #f7f7f7, #1e80f9);
-}
+/*DISPLAY*/
 
-.velocity img {
-  margin-left: 20px;
-  margin-top: 25px;
-  width: 165px;
-  height: 125px;
-}
-
-.velocity h3 {
-  font-family: "Ropa Sans", sans-serif;
-  font-size: x-large;
-  margin-left: 10px;
-  margin-top: 20px;
-}
-
-.electrify {
-  animation: all 1.9s ease-in;
-}
-.electrify:hover {
-  background-image: linear-gradient(135deg, #f7f7f7, #fa8a1a);
-}
-.monster {
-  animation: all 1.9s ease-in;
-}
-.monster:hover {
-  background-image: linear-gradient(135deg, #f7f7f7, #282828);
-}
-.magnify {
-  animation: all 1.9s ease-in;
-}
-.magnify:hover {
-  background-image: linear-gradient(135deg, #f7f7f7, #f83c55);
-}
-.velocity {
-  animation: all 1.9s ease-in;
-}
-.velocity:hover {
-  background-image: linear-gradient(135deg, #f7f7f7, #b0d65c);
-}
-
-/*Display*/
-
-/*Trending*/
+/*TRENDING*/
 
 .trending {
   height: 40vw;
@@ -669,8 +630,8 @@ sup {
 
 .sliding-background {
   background: url("./assets/trnding-background.png") repeat-y 0 0;
-  height: 1120px;
-  width: 5076px;
+  height: auto;
+  width: 100vw;
   animation: slide 5s linear infinite;
 }
 
@@ -691,10 +652,10 @@ sup {
 
 .trending-item-1 {
   position: absolute;
-  left: 185px;
-  height: 375px;
-  top: 100px;
-  width: 450px;
+  left: 12vw;
+  height: 27vw;
+  top: 7vw;
+  width: 33vw;
   animation: all 2s ease-in-out;
 }
 
@@ -705,19 +666,19 @@ sup {
 
 .trending-item-2 {
   position: absolute;
-  left: 805px;
-  height: 375px;
-  top: 100px;
-  width: 450px;
+  left: 55vw;
+  height: 27vw;
+  top: 7vw;
+  width: 33vw;
 }
 
 .trending-item-2 img {
   width: 100%;
   height: 100%;
 }
-/*Trending*/
+/*TRENDING*/
 
-/*Cursor*/
+/*CURSOR*/
 
 .cursor {
   position: absolute;
@@ -733,7 +694,6 @@ sup {
   overflow: hidden;
   transition: background-color 1s ease;
   font-weight: 600;
-  font-family: "Ropa Sans", sans-serif;
 }
 
 .cursor.hovering {
@@ -748,30 +708,21 @@ sup {
   transition: background-color 1s ease;
 }
 
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
+/*CURSOR*/
 
-/*Cursor*/
-
-/*Banners*/
+/*BANNER*/
 
 .banner {
   position: relative;
   height: 35vw;
-  width: 100%;
+  width: 99.3vw;
   overflow: hidden;
 }
 
 .banner-reverse {
   position: relative;
   height: 35vw;
-  width: 100%;
+  width: 99.3vw;
   overflow: hidden;
 }
 
@@ -779,7 +730,7 @@ sup {
   position: absolute;
   bottom: 0%;
   left: 0;
-  width: 100%;
+  width: 99.3vw;
   height: 35vw;
   background: rgba(0, 0, 0, 0.736);
   transition: transform 1s;
@@ -790,7 +741,7 @@ sup {
   position: absolute;
   bottom: 0%;
   left: 0;
-  width: 100%;
+  width: 99.3vw;
   height: 35vw;
   background: rgba(0, 0, 0, 0.736);
   transition: transform 1s;
@@ -806,12 +757,12 @@ sup {
 }
 
 .banner img {
-  width: 1420px;
+  width: 100%;
   height: 35vw;
 }
 
 .banner-reverse img {
-  width: 1420px;
+  width: 100%;
   height: 35vw;
 }
 
@@ -834,39 +785,38 @@ sup {
 }
 
 .text h1 {
-  font-family: "Ropa Sans", sans-serif;
-  font-size: 40px;
+  font-size: 4vw;
   font-weight: 600;
   color: #fff;
-  letter-spacing: 1px;
-  margin-top: 100px;
+  letter-spacing: 0.1vw;
+  margin-top: 5vw;
 }
 
 .text h2 {
-  margin-top: 2px;
-  margin-bottom: 7px;
-  font-size: 28px;
+  margin-top: 0.2vw;
+  margin-bottom: 0.7vw;
+  font-size: 2.8vw;
   font-weight: 300;
   color: #f2f2f2;
-  letter-spacing: 1px;
+  letter-spacing: 0.1vw;
 }
 
 .text button {
-  margin-top: 10px;
-  padding: 10px 20px;
+  margin-top: 1vw;
+  padding: 1vw 2vw;
   background: #e5ff1f;
   color: #000;
   border: none;
-  border-radius: 5px;
-  font-size: 15px;
+  border-radius: 0.5vw;
+  font-size: 1.5vw;
   font-weight: 300;
   cursor: pointer;
-  margin-right: 10px;
+  margin-right: 1vw;
 }
 
-/*Banners*/
+/*BANNER*/
 
-/*Image-Slider*/
+/*IMAGE-SLIDER*/
 
 @keyframes bannermove {
   0% {
@@ -889,20 +839,20 @@ sup {
 }
 
 .image-slider h2 {
-  padding-left: 40px;
+  padding-left: 3vw;
   font-size: 2.5vw;
 }
 
 .image-slider img {
-  padding: 10px;
+  padding: 1vw;
   display: block;
   width: 100%;
-  height: 350px;
+  height: 25vw;
 }
 
 .image-slider {
   background-color: #fff;
-  width: 100%;
+  width: 99.3vw;
   height: fit-content;
   overflow: hidden;
   padding-bottom: 2vw;
@@ -944,20 +894,20 @@ sup {
   justify-content: center;
   align-items: center;
   color: white;
-  font-size: 24px;
+  font-size: 2.4vw;
   text-align: center;
   background: rgba(0, 0, 0, 0.5);
   opacity: 0;
-  transition: opacity 0.3s;
+  transition: opacity 0.4s;
 }
 
 .image-slider li:hover .image-text {
   opacity: 1;
 }
 
-/*Image-Slider*/
+/*IMAGE-SLIDER*/
 
-/*Footer*/
+/*FOOTER*/
 
 footer img {
   width: 99.2vw;
@@ -966,4 +916,4 @@ footer img {
   overflow: hidden;
 }
 
-/*Footer*/
+/*FOOTER*/
